@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --line-sections: gray;
+  --bg-main: #f5f5f5
+}
+
+/* Geral */
+body {
+  background-color: var(--bg-main);
+}
+
+i {
+  width: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Cabeçalho */
+#header {
+  display: grid;
+  grid-template-columns: 28% 44% 28%;
+  height: 80px;
+  margin-top: 30px;
+  font-family: "Montserrat";
+}
+
+#name-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  background-color: black;
+  height: 2px;
+  margin: 50px 0;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Contato */
+#contato ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+/* Layout */
+#layout {
+  display: grid;
+  grid-template-columns: 35% auto;
+  column-gap: 20px; 
+}
+
+#aside, #main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-family: "Hubballi", cursive;
+}
+
+/* Cards */
+.card {
+  padding: 20px;
+  border: 1px solid var(--line-sections);
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-family: "Montserrat";
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding-left: 30px;
+}
